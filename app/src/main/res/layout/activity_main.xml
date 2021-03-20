@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDD4CB"
+    android:orientation="vertical"
+    tools:context=".ui.MainMenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Let's \n    Play"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="90dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainPlayGame"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/mainSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_btn_height"
+            android:layout_marginBottom="@dimen/main_btn_margin_bottom"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/main_btn_padding_left_right"
+            android:paddingRight="@dimen/main_btn_padding_left_right"
+            android:text="SIGN UP"
+            android:textSize="@dimen/main_btn_textSize" />
+
+        <Button
+            android:id="@+id/mainLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/main_btn_margin_bottom"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/main_btn_padding_left_right"
+            android:paddingRight="@dimen/main_btn_padding_left_right"
+            android:text="LOG IN"
+            android:textSize="@dimen/main_btn_textSize" />
+
+        <Button
+            android:id="@+id/mainMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/main_btn_margin_bottom"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/main_btn_padding_left_right"
+            android:paddingRight="@dimen/main_btn_padding_left_right"
+
+            android:text="MAPS"
+            android:textSize="@dimen/main_btn_textSize" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/main_btn_margin_bottom"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/main_btn_padding_left_right"
+            android:paddingRight="@dimen/main_btn_padding_left_right"
+            android:text="LOG Out"
+            android:textSize="@dimen/main_btn_textSize" />
+
+
+        <Button
+            android:id="@+id/mainExit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_btn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/main_btn_padding_left_right"
+            android:paddingRight="@dimen/main_btn_padding_left_right"
+            android:text="EXIT"
+            android:textSize="@dimen/main_btn_textSize" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/mainPlayGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:background="#CEF3BBB1"
+        android:src="@drawable/play_btn"
+        android:text="PLAY GAME" />
+
+
+</RelativeLayout>

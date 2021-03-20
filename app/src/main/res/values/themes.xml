@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BallTry1Java" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:buttonStyle">@style/main_btn_style</item>
+
+    </style>
+
+
+
+    <style name="main_btn_style" parent="Widget.AppCompat.Button" >
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="background">@drawable/btn_bg</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="paddingEnd">30dp</item>
+        <item name="android:color">@color/white</item>
+    </style>
+</resources>
